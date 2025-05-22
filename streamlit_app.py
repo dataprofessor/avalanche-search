@@ -221,3 +221,6 @@ if __name__ == "__main__":
     # session = st.connection("snowflake")
     root = Root(session)
     main()
+
+search_service = session.sql("SHOW CORTEX SEARCH SERVICES;")
+st.write(search_service)
