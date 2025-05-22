@@ -215,7 +215,7 @@ def main():
         )
 
 if __name__ == "__main__":
-    # session = get_active_session()
-    session = st.connection("snowflake")
+    session = get_active_session()
+    # session = st.connection("snowflake")
     root = Root(session)
     main()
