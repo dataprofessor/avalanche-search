@@ -216,7 +216,7 @@ def main():
         )
 
 if __name__ == "__main__":
-    session = Session.builder.config("connection.snowflake").create()
+    session = st.connection("snowflake").session()
     # session = get_active_session()
     # session = st.connection("snowflake")
     root = Root(session)
